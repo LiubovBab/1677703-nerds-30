@@ -1,7 +1,9 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Любовь коростылева](https://up.htmlacademy.ru/htmlcss/30/user/1677703).
-* Наставник: [Роман Марченко](https://htmlacademy.ru/profile/id505487).---
+* Наставник: [Роман Марченко](https://htmlacademy.ru/profile/id505487).
+
+---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
