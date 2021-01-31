@@ -1,0 +1,193 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-extra-dark: #283136;
+  --basic-grey: #242424;
+  --basic-dum-grey: #666666;
+  --basic-beige: #EEEEEE;
+  --basic-beige-fon: #888888;
+
+  --special: #E74246;
+  --special-logo: #FB565A;
+}
+
+/* Global */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--beige-fon);}
+
+img {
+  max-width: 100%;
+  height: auto;}
+
+.button{
+  color: var(--basic-white);
+  background-color: red; /*нужно удалить, когда будет цвет кнопок */
+  font: inherit;
+  text-align: center;
+  border: none;}
+
+a {
+  text-decoration: none;}
+
+ul{
+  list-style: none;}
+
+.basket-link {
+  list-style: none;
+  color: var(--basic-black);}
+
+/* Header */
+
+.main-header {
+  font-weight: 500;
+  line-height: 30px;
+  background-color: var(--basic-beige);
+  text-transform: uppercase;}
+
+.site-navigation a,
+.basket-link a,
+.site-navigation a:focus,
+.basket-link:focus {
+  color: var(--basic-black);}
+
+.site-navigation a:hover,
+.basket-link:hover{
+  color: var(--special-logo);}
+
+  /* Main */
+
+.advantages {
+  background-color: var(--basic-beige);}
+
+.slogan {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  text-transform: uppercase;}
+
+.services-list {
+  text-align: left;}
+
+.services-item h3{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;}
+
+.slogans {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;}
+
+.aside caption,
+.orders {
+    font-weight: 700;
+    text-transform:uppercase;}
+
+.aside td {
+  line-height: 18px;}
+
+th
+  {font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;}
+
+th:nth-child(2n){
+    font-size: 26px;
+    line-height: 40px;}
+
+    /*Main-fotter*/
+
+.contacts .nerds {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform:uppercase;}
+
+.contacts p {
+  color: var(--basic-dum-grey);
+  line-height: 18px;}
+
+.contacts-phone{
+  color: var(--basic-dum-grey);}
+
+.footer-social {
+  text-align: left;}
+
+.modal span {
+  font-size: 45px;
+  line-height: 52,73px;
+  font-weight: 700;}
+
+
+.modal p{
+  line-height: 18px;
+  font-weight: 700;}
+
+.social p {font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;}
+
+.sale{
+  line-height: 22px;}
+
+
+/*Catalog*/
+
+
+.page-title{font-size: 18px;
+line-height: 30px;
+font-weight: 700;
+text-transform: uppercase;}
+
+.price {line-height: 22px;
+  color: var(--basic-extra-dark);}
+
+ul{
+  line-height: 20px;}
+
+.button-show {
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+}
+
+.sort{font-size: 14px;
+line-height: 18px;}
+
+.template-info{
+  line-height: 18px;
+  color: var(--basic-dum-grey);
+  text-align: center;}
+
+.pagination-item {
+  color: var(--basic-black);}
+
+.pagination-item a:hover{
+  background-color: #DFDFDF;}
+
+.pagination-item a:focus{
+  background-color: #D5D5D5;}
+
+.pagination-item a:active {
+  background-color: rgba(0, 0, 0, 0.0001);}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  background-color: rgba(0, 0, 0, 0.0001);}
