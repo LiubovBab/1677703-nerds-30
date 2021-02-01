@@ -39,7 +39,15 @@ img {
 a {
   text-decoration: none;}
 
-ul{
+.site-navigation,
+.services-list,
+.aside ul,
+.focioter-social,
+.grid-list,
+.features-list,
+.template,
+.pagination-list ul,
+.focioter-social{
   list-style: none;}
 
 .basket-link {
@@ -98,12 +106,12 @@ ul{
 .aside td {
   line-height: 18px;}
 
-th
+.accuracy-table th
   {font-size: 45px;
   line-height: 64px;
   font-weight: 700;}
 
-th:nth-child(2n){
+.accuracy-table th:nth-child(2n){
     font-size: 26px;
     line-height: 40px;}
 
@@ -155,7 +163,8 @@ text-transform: uppercase;}
 .price {line-height: 22px;
   color: var(--basic-extra-dark);}
 
-ul{
+.grid-list,
+.features-list{
   line-height: 20px;}
 
 .button-show {
