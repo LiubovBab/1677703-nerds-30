@@ -72,14 +72,21 @@ a {
   text-transform: uppercase;}
 
 .main-navigation-wrapper {
-  display: grid;
-  grid-template-columns: 140px 1fr min-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
   margin: 0 auto;
   padding: 0 10px;}
 
-.basket-link {
-    grid-column-start: 2;
-    grid-column-end: 3;}
+.main-header-logo {
+  width: 159.87px;
+  height: 48.75px;}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;}
 
 
 .site-navigation a,
@@ -95,14 +102,23 @@ a {
 .site-navigation {
   margin: 0;
   padding: 0;
-  align-content: start;}
+  align-content: start;
+  width: 437px;}
 
-  /* Main */
+.basket-navigation {
+  max-width: 120px;}
+
+.basket-navigation .basket-link{
+  padding-left: 50px;}
+
+  /* Container */
 
 .container {
   width: 1157px;
   margin: 0 auto;
   padding: 0 10px;}
+
+  /* Main*/
 
 .advantages {
   background-color: var(--basic-beige);
@@ -254,16 +270,28 @@ a {
   grid-template-columns: 180px 1fr;
   align-content: start;}
 
-.title-wrapper {
-  margin: 0;
-  padding: 0;}
+.filters {
+  width: 260px;}
 
+.filters fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 47px;
+  border: none;}
 
 .page-title {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  text-transform: uppercase;}
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  text-align: left;}
+
+.page-title ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;}
 
 .price {
   line-height: 22px;
@@ -271,7 +299,8 @@ a {
 
 .grid-list,
 .features-list{
-  line-height: 20px;}
+  line-height: 20px;
+  padding-bottom: 18px;}
 
 .button-show {
   line-height: 18px;
@@ -281,13 +310,49 @@ a {
   border: none;}
 
 .sort {
+  display: flex;
+  justify-content: space-around;
   font-size: 14px;
-  line-height: 18px;}
+  line-height: 18px;
+  color: var(--basic-black);}
+
+.sort .page-title{
+  margin-left: 140px;
+  margin-right: 266px;}
+
+.template {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 141px;
+  list-style: none;}
+
+.template li {
+  width: 329px;
+  min-height: 579px;}
+
+.template li:nth-child(1n) {
+  padding-right: 20px;}
+
+.card-template {
+  weight: 360px;
+  height: 231px;
+  border: 1px solid var(--basic-beige);
+  text-align: center;
+  padding-top: 26px;
+  padding-bottom: 44px;}
+
+.card-template .page-title{
+  text-align: center;
+}
 
 .template-info {
   line-height: 18px;
   color: var(--basic-dum-grey);
   text-align: center;}
+
+.pagination-list ul{
+  display: flex;
+  justify-content: space-around;}
 
 .pagination-item {
   color: var(--basic-black);}
