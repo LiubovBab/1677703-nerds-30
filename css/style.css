@@ -8,6 +8,7 @@
   --basic-dum-grey: #666666;
   --basic-beige: #EEEEEE;
   --basic-beige-fon: #888888;
+  --basic-button: #FB565A;
 
   --special: #E74246;
   --special-logo: #FB565A;}
@@ -35,10 +36,11 @@ img {
 
 .button{
   color: var(--basic-white);
-  background-color: red; /*нужно удалить, когда будет цвет кнопок */
+  background-color: var(--basic-button);
   font: inherit;
   text-align: center;
-  border: none;}
+  border: none;
+  display: inline-block;}
 
 a {
   text-decoration: none;}
@@ -88,7 +90,6 @@ a {
   display: flex;
   justify-content: space-between;}
 
-
 .site-navigation a,
 .basket-link a,
 .site-navigation a:focus,
@@ -127,6 +128,10 @@ a {
   margin: 0 auto;
   padding: 0 10px;}
 
+.advantages a {
+  background-color: var(--basic-button);
+  background-size: 240px 50px;}
+
 .slogan {
   font-size: 55px;
   font-weight: 500;
@@ -148,6 +153,19 @@ a {
   text-transform: uppercase;}
 
 .services-item p {margin: 0 10px;}
+
+.services-list .button {
+  display: inline-block;
+  background-size: 160px 50px;
+  text-align: center;
+  margin-top: 32px;}
+
+.order-two {
+  background-color: #00CA74;
+  }
+
+.order-three{
+  background-color: #EFC849;}
 
 .slogans {
   font-weight: 500;
@@ -233,6 +251,13 @@ a {
 .contacts p {
   color: var(--basic-dum-grey);
   line-height: 18px;}
+
+.contacts .button {
+  background-size: 219px 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 47px;
+}
 
 .contacts-phone {
   color: var(--basic-dum-grey);}
