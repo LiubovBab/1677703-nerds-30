@@ -18,7 +18,7 @@
   <nav class="main-navigation-wrapper">
     <div class="container">
       <a>
-        <img class="main-header-logo" src="img/nerds-logo.svg" width="100" height="50" alt="Logo Nerds">
+        <img class="main-header-logo" src="img/nerds-logo.svg" width="160" height="49" alt="Logo Nerds">
       </a>
       <ul class="site-navigation">
         <li><a href="blank.html">Студия</a></li>
@@ -35,24 +35,46 @@
     <h1 class="title-wrapper">Магазин готовых шаблонов</h1>
   </div>
 </header>
-<h2>Фильтр шаблонов</h2>
+<h2 class="visually-hidden">Фильтр шаблонов</h2>
 <main class="page-catalog container">
   <section class="filters">
-    <p class="page-title">Стоимость:</p>
-    <p class="price">от 0 до 15000</p>
+    <div class="price">
+    <form method="get" action="https://echo.htmlacademy.ru">
+      <fieldset class="filter-item">
+        <legend>Стоимость:</legend>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar" style="width: 30%; margin-left: 20%"></div>
+            </div>
+            <div class="toggle toggle-min" tabindex="0" style="20%"></div>
+            <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">
+              от <input type="number" name="min-price" value="0">
+            </label>
+            <label class="max-price">
+              до <input type="number" name="max-price" value="15000">
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
     <form method="get" action="#">
   <fieldset>
-    <legend class="page-title">Сетка:</legend>
+    <legend class="page-title grid-title">Сетка:</legend>
     <ul class="grid-list">
-      <li>
-        <input type="radio" name="grid" id="adaptivnaua" type="checkbox" checked>
+      <li class="filter-option">
+        <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="adaptivnaua" type="checkbox" checked>
         <label for="adaptivnaua">Адаптивная</label>
       </li>
-      <li><input type="radio" name="grid" id="fixed"type="checkbox">
+      <li class="filter-option">
+        <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="fixed" type="checkbox">
         <label for="fixed">Фиксированная</label>
       </li>
-      <li>
-        <input type="radio" name="grid" id="rubber"type="checkbox">
+      <li class="filter-option">
+        <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="rubber" type="checkbox">
         <label for="rubber">Резиновая</label>
       </li>
     </ul>
@@ -61,23 +83,23 @@
     <legend class="page-title">Особенности:</legend>
     <ul class="features-list">
       <li>
-        <input type="checkbox" name="slider" id="filter-slider" checked>
+        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
         <label for="filter-slider">Слайдер</label>
       </li>
       <li>
-        <input type="checkbox" name="block" id="filter-block">
-          <label for="filter-block">Блок преимуществ</label>
+        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="block" id="filter-block">
+        <label for="filter-block">Блок преимуществ</label>
       </li>
       <li>
-        <input type="checkbox" name="news" id="filter-news" checked>
+        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
         <label for="filter-news">Новости</label>
       </li>
       <li>
-        <input type="checkbox" name="gallery" id="filter-gallery">
+        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
         <label for="filter-gallery">Галерея</label>
       </li>
       <li>
-        <input type="checkbox" name="basked" id="filter-basked">
+        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="basked" id="filter-basked">
         <label for="filter-basked">Корзина</label>
       </li>
     </ul>
@@ -88,12 +110,13 @@
 <section>
   <div class="sort">
     <p class="page-title">Сортировать:</p>
-    <a class="button" href="#">По цене</a>
+    <a class="button button-current" href="#">По цене</a>
     <a class="button" href="#">По типу</a>
     <a class="button" href="#">По названию</a>
-    <a class="button" href="#">По убыванию</a>
+    <a class="button button-current-triangle" href="#" id="triangle_down"></a>
+    <a class="button" href="#" id="triangle_up"></a>
   </div>
-    <h3>Вид шаблонов</h3>
+    <h3 class="visually-hidden">Вид шаблонов</h3>
     <ul class="template">
       <li>
         <img src="img\img-sedona.jpg" width="358" height="578" alt="Шаблон «Sedona»">
@@ -144,27 +167,27 @@
         </div>
       </li>
     </ul>
-  <div class="pagination-list">
-    <ul>
-      <li>
-        <a class="pagination-item pagination-item-current">1</a>
+  <div class="pagination">
+    <ul class="pagination-list">
+      <li  class="pagination-item pagination-item-current">
+        <a>1</a>
       </li>
-      <li>
-        <a class="pagination-item" href="#">2</a>
+      <li class="pagination-item">
+        <a href="#">2</a>
       </li>
-      <li>
-        <a class="pagination-item" href="#">3</a></li>
-        <li>
-          <a class="pagination-item" href="#">Следующая</a>
-        </li>
-      </ul>
-    </div>
-    </section>
+      <li class="pagination-item">
+        <a href="#">3</a></li>
+      <li class="pagination-item">
+          <a href="#">Следующая</a>
+      </li>
+    </ul>
+  </div>
+</section>
 </main>
 <footer>
   <div class="container">
     <div class="contacts">
-      <h2>Контактная информация</h2>
+      <h2 class="visually-hidden">Контактная информация</h2>
       <img class="card" src="img/map.jpg" width="1400" height="416" alt="Карта">
     <div class="address-text">
       <p class="nerds">nёrds desingn studio</p>
