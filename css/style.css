@@ -45,6 +45,13 @@ img {
 a {
   text-decoration: none;}
 
+hr{
+  height: 2px;
+  width: 1158px;
+  color: var(--basic-beige);
+  text-align: center;
+}
+
 .site-navigation,
 .services-list,
 .aside ul,
@@ -158,6 +165,7 @@ a {
 
 .advantages {
   background-color: var(--basic-beige);
+  background-size: 100%;
   display: grid;
   grid-template-columns: 400px 144px 619px;
   grid-template-rows: 189px 25px 49px 38px 130px;
@@ -189,11 +197,12 @@ a {
 .advantages .button{
   display: block;
   width: 240px;
-  height: 50px;
+  height: 40px;
   text-transform: uppercase;
   line-height: 18px;
   padding-top: 17px;
-  padding-bottom: 0;}
+  padding-bottom: 0;
+  margin-bottom: 0;}
 
 .advantages .button:hover{
   background-color: #E74246;}
@@ -203,7 +212,9 @@ a {
 
 .advantages img{
   grid-column: 2/-1;
-  grid-row: 1/-1;}
+  grid-row: 1/-1;
+  background-color: var(--basic-beige);
+  background-size: 100%;}
 
 .services-list {
   text-align: left;
@@ -301,11 +312,16 @@ a {
   line-height: 40px;}
 
 .partner{
-  display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
-  column-gap: 95px;
-  margin: 0;
-  padding: 0;}
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+  padding: 0 0;}
+
+.line-vertic{
+  width: 2px;
+  height: 52px;
+  text-align: center;
+  }
 
 .line-three{
   margin-bottom: 80px;}
@@ -320,14 +336,16 @@ a {
 .address-text {
   background-color:  var(--basic-white);
   position: absolute;
-  top: 54px;
-  left: 140px;
-  width: 319px;
-  height: 308px;
+  top: 50px;
+  left: 80px;
+  bottom: 54px;
+  width: 280px;
+  height: 300px;
   text-align: left;
   padding-left: 50px;
   padding-top: 49px;
-  padding-right: 0px;}
+  padding-right: 0px;
+  margin-right: 0px;}
 
 .card {
   width: 1400px;
@@ -336,7 +354,7 @@ a {
 .pointer {
   position: absolute;
   top: 86px;
-  left: 822px;
+  left: 650px;
   width: 231px;
   height: 190px;}
 
@@ -574,7 +592,7 @@ a {
 /*filters*/
 
 .filters {
-  width: 208px;
+  width: 260px;
   height: 418px;
   margin-top: 55px;}
 
@@ -723,9 +741,14 @@ a {
   margin-right: 0;
   padding-right: 0;}
 
+
+    /* template*/
+
+
 .template {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-left: 141px;
   list-style: none;}
 
@@ -733,20 +756,41 @@ a {
   width: 329px;
   min-height: 579px;}
 
+.template img{
+  position: relative;
+  width: 358px;
+  height: 578px;}
+
+.template .page-title:hover{
+  color:#FB565A}
+.template .page-title:focus{
+  opacity: 0.3;}
+
+.template .button{
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  margin-top: 32px;}
+
+.template .button:hover{
+  background-color: #E74246;}
+.template .button:focus{
+  background-color: #D7373B;;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);}
+
 .template li:nth-child(1n) {
   padding-right: 20px;}
 
 .card-template {
   weight: 360px;
   height: 231px;
-  border: 1px solid var(--basic-beige);
+  background-color: var(--basic-beige);
   text-align: center;
   padding-top: 26px;
   padding-bottom: 44px;}
 
 .card-template .page-title{
-  text-align: center;
-}
+  text-align: center;}
 
 .template-info {
   line-height: 18px;
