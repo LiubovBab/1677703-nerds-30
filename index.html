@@ -21,10 +21,10 @@
         <img class="main-header-logo" src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Logo Nerds">
       </a>
         <ul class="site-navigation">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="сatalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a class="site-navigation-atelier" href="#">Студия</a></li>
+          <li><a class="site-navigation-client" href="#">Клиенты</a></li>
+          <li><a class="site-navigation-catalog" href="сatalog.html">Магазин</a></li>
+          <li><a class="site-navigation-contact" href="#">Контакты</a></li>
         </ul>
         <div class="basket-navigation">
           <a class="basket-link" href="#">Корзина</a>
@@ -33,7 +33,7 @@
   </nav>
 </header>
 <main>
-  <section>
+  <section class="beginning">
     <div class="container">
       <h1 class="visually-hidden">Интернет магазин Nerds</h1>
       <div class="advantages">
@@ -75,10 +75,10 @@
       <img src="img\nerds-logo-color.jpg" width="360" height="208" alt="Логотип «Нердс»">
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
       <p class="orders">Выполняем заказы на разработку:</p>
-      <ul>
-        <li>Веб-сайтов любой сложности</li>
-        <li>Мобильных приложени для iOS и Android</li>
-        <li>Слайдшоу и видео для корпоративных презентаций</li>
+      <ul class="orders-for-software">
+        <li class="orders-for-software-item">Веб-сайтов любой сложности</li>
+        <li class="orders-for-software-item">Мобильных приложени для iOS и Android</li>
+        <li class="orders-for-software-item">Слайдшоу и видео для корпоративных презентаций</li>
       </ul>
       <table class="accuracy-table">
         <caption>С 2004 года любим точность во всем:</caption>
@@ -109,19 +109,21 @@
     <hr class="line-three">
   </div>
   </section>
-  <div class="container">
-    <div class="contacts">
-      <h2 class="visually-hidden">Контактная информация</h2>
-      <img class="card" src="img/map.jpg" width="1400" height="416" alt="Карта">
-    <div class="address-text">
-      <p class="nerds">nёrds desingn studio</p>
-      <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-      <a class="contacts-phone" href="tel:+78122757575">тел. +7(812) 275-75-75</a>
-      <a href="#" class="button">Напишите нам</a>
+  <section class="map-main">
+    <h2 class="visually-hidden">Контактная информация</h2>
+    <img class="map" src="img/map.jpg" width="1400" height="416" alt="Карта">
+    <div class="container">
+      <div class="contacts">
+          <div class="address-text">
+          <p class="nerds">nёrds desingn studio</p>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a class="contacts-phone" href="tel:+78122757575">тел. +7(812) 275-75-75</a>
+          <a href="#" class="button">Напишите нам</a>
+        </div>
+        <img class="pointer" src="img\map-marker.png" width="231" height="190" alt="Указатель">
+      </div>
     </div>
-    <img class="pointer" src="img\map-marker.png" width="231" height="190" alt="Указатель">
-  </div>
-</div>
+</section>
 </main>
   <footer class="main-footer">
     <div class="container">
@@ -141,8 +143,8 @@
               <svg width="20" height="20" viewBox="0 0 20 20"><path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" fill="#FFFFFF"/></svg></a></li>
         </ul>
         <div class="social-text">
-        <p>Давайте дружить, это выгодно!</p>
-        <span class="sale">Скидка 10% для друзей из социальных сетей.</span>
+          <p>Давайте дружить, это выгодно!</p>
+          <span class="sale">Скидка 10% для друзей из социальных сетей.</span>
       </div>
     </div>
   </div>`
@@ -164,6 +166,7 @@
           </p>
         <input class="button" type="submit" value="Отправить">
       </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </div>
   </div>
 </footer>

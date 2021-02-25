@@ -21,10 +21,10 @@
         <img class="main-header-logo" src="img/nerds-logo.svg" width="160" height="49" alt="Logo Nerds">
       </a>
       <ul class="site-navigation">
-        <li><a href="blank.html">Студия</a></li>
-        <li><a href="blank.html">Клиенты</a></li>
-        <li><a href="сatalog.html">Магазин</a></li>
-        <li><a href="blank.html">Контакты</a></li>
+          <li><a class="site-navigation-atelier" href="blank.html">Студия</a></li>
+          <li><a class="site-navigation-client" href="blank.html">Клиенты</a></li>
+          <li><a class="site-navigation-catalog-current" href="сatalog.html">Магазин</a></li>
+          <li><a class="site-navigation-contact" href="blank.html">Контакты</a></li>
       </ul>
       <div class="basket-navigation">
         <a class="basket-link" href="#">Корзина</a>
@@ -118,12 +118,12 @@
   </div>
     <h3 class="visually-hidden">Вид шаблонов</h3>
     <ul class="template">
-      <li>
+      <li class="template-current">
         <img src="img\img-sedona.jpg" width="358" height="578" alt="Шаблон «Sedona»">
         <div class="card-template">
           <p class="page-title">Sedona</p>
           <p class="template-info">Информационный сайт для туристов</p>
-          <button class="button">9 900 ₽</button>
+          <p class="template-price">9 900 ₽</p>
         </div>
       </li>
       <li>
@@ -131,7 +131,7 @@
         <div class="card-template">
           <p class="page-title">Pink</p>
           <p class="template-info">Cайт приложения на телефон</p>
-          <button class="button">8 900 ₽</button>
+          <p class="template-price">8 900 ₽</p>
         </div>
       </li>
       <li>
@@ -139,7 +139,7 @@
         <div class="card-template">
           <p class="page-title">Borodinski</p>
           <p class="template-info">Сайт барбершопа</p>
-          <button class="button">9 900 ₽</button>
+          <p class="template-price">9 900 ₽</p>
         </div>
       </li>
       <li>
@@ -147,7 +147,7 @@
         <div class="card-template">
           <p class="page-title">Mishka</p>
           <p class="template-info">Сайт для заказа вязанных изделий</p>
-          <button class="button">8 900 ₽</button>
+          <p class="template-price">8 900 ₽</p>
         </div>
       </li>
       <li>
@@ -155,7 +155,7 @@
         <div class="card-template">
           <p class="page-title">Aplus</p>
           <p class="template-info">Информационный сайт для обучения</p>
-          <button class="button">9 900 ₽</button>
+          <p class="template-price">9 900 ₽</p>
         </div>
       </li>
       <li>
@@ -163,7 +163,7 @@
         <div class="card-template">
           <p class="page-title">Kvast</p>
           <p class="template-info">Сайт магазина пива</p>
-          <button class="button">8 900 ₽</button>
+          <p class="template-price">8 900 ₽</p>
         </div>
       </li>
     </ul>
@@ -184,20 +184,22 @@
   </div>
 </section>
 </main>
-<footer>
-  <div class="container">
-    <div class="contacts">
-      <h2 class="visually-hidden">Контактная информация</h2>
-      <img class="card" src="img/map.jpg" width="1400" height="416" alt="Карта">
-    <div class="address-text">
-      <p class="nerds">nёrds desingn studio</p>
-      <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <a class="contacts-phone" href="tel:+78122757575">тел. +7(812) 275-75-75</a>
-      <a href="#" class="button">Напишите нам</a>
+  <section class="map-main">
+    <h2 class="visually-hidden">Контактная информация</h2>
+    <img class="map" src="img/map.jpg" width="1400" height="416" alt="Карта">
+    <div class="container">
+      <div class="contacts">
+          <div class="address-text">
+          <p class="nerds">nёrds desingn studio</p>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a class="contacts-phone" href="tel:+78122757575">тел. +7(812) 275-75-75</a>
+          <a href="#" class="button">Напишите нам</a>
+        </div>
+        <img class="pointer" src="img\map-marker.png" width="231" height="190" alt="Указатель">
+      </div>
     </div>
-    <img class="pointer" src="img\map-marker.png" width="231" height="190" alt="Указатель">
-  </div>
-</div>
+</section>
+<footer>
     <div class="container">
       <div class="social">
         <ul class="footer-social">
