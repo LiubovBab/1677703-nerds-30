@@ -145,7 +145,7 @@ hr{
   content: "";
   width: 60px;
   height: 2px;
-  background-color: #FB565A;
+  background-color: var(--special-logo);
   position:absolute;
   top: 60px;
   left: 810px;}
@@ -192,7 +192,7 @@ hr{
 
 .slogan {
   font-size: 55px;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 55px;
   text-transform: uppercase;
   margin-left: 0px;
@@ -320,13 +320,13 @@ hr{
   grid-column: 1/2;
 }
 
-.orders-for-software-item::before{
+.orders-for-software-item::before {
   content: "";
-  top: 27px;
-  left: 24px;
+  display: inline-block;
   width: 25px;
   height: 2px;
-  background-image: var(--special-logo);
+  background-color: var(--special-logo);
+  margin: 5px 5px;
 }
 
 
@@ -337,17 +337,20 @@ hr{
 .accuracy-table th {
   font-size: 45px;
   line-height: 64px;
-  font-weight: 700;}
+  font-weight: 700;
+}
 
 .accuracy-table .interest {
   font-size: 26px;
-  line-height: 40px;}
+  line-height: 40px;
+}
 
 .partner{
   display: flex;
   justify-content: space-between;
   margin: 40px 0;
-  padding: 0 0;}
+  padding: 0 0;
+}
 
 .line-vertic{
   width: 2px;
