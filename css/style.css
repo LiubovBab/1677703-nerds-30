@@ -235,6 +235,57 @@ a {
   background-color: #D7373B;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);}
 
+.slider {
+  position: relative;
+  grid-column: 2/-1;
+  grid-row: 1/-1;
+  background-color: var(--basic-beige);
+  }
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.slide {
+  display: none;
+}
+.slider-controls {
+  position: absolute;
+  bottom: 290px;
+  left: 675px;
+  z-index: 20;
+  display: flex;
+  width: 67px;
+  justify-content: space-between;
+ }
+
+.slider-controls button {
+  padding: 0;
+  width: 17px;
+  height: 17px;
+  background-color: var(--basic-white);
+  border: 2px solid var(--basic-white);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: -22.5px;
+}
+
+.slide-current {
+  display: block;
+}
+
+.slider-controls .current::before {
+  content: "";
+  position: absolute;
+  border: 3px solid #C1C1C1;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  bottom: 3.5px;
+  left: 3.6px;
+}
+
 .advantages img{
   grid-column: 2/-1;
   grid-row: 1/-1;
