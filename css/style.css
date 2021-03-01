@@ -40,10 +40,12 @@ img {
   text-align: center;
   border: none;
   display: inline-block;
-  border-radius: 3px;}
+  border-radius: 3px;
+}
 
 a {
-  text-decoration: none;}
+  text-decoration: none;
+}
 
 
 .site-navigation,
@@ -55,11 +57,13 @@ a {
 .template,
 .pagination-list ul,
 .focioter-social{
-  list-style: none;}
+  list-style: none;
+}
 
 .basket-link {
   list-style: none;
-  color: var(--basic-black);}
+  color: var(--basic-black);
+}
 
 .visually-hidden {
   position: absolute;
@@ -71,12 +75,14 @@ a {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;}
+  overflow: hidden;
+}
 
   /* Grid*/
 
 .page {
-  height: 100%;}
+  height: 100%;
+}
 
 /* Header */
 
@@ -84,7 +90,8 @@ a {
   font-weight: 500;
   line-height: 30px;
   background-color: var(--basic-beige);
-  text-transform: uppercase;}
+  text-transform: uppercase;
+}
 
 .main-navigation-wrapper {
   display: flex;
@@ -92,7 +99,8 @@ a {
   justify-content: flex-start;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;}
+  padding: 0 15px;
+}
 
 .main-header-logo {
   width: 159.87px;
@@ -109,17 +117,20 @@ a {
 
 .main-navigation-wrapper .container {
   display: flex;
-  justify-content: space-between;}
+  justify-content: space-between;
+}
 
 .site-navigation a,
 .basket-link a,
 .site-navigation a:focus,
 .basket-link:focus {
-  color: var(--basic-black);}
+  color: var(--basic-black);
+}
 
 .site-navigation a:hover,
 .basket-link:hover{
-  color: var(--special-logo);}
+  color: var(--special-logo);
+}
 
 .site-navigation a:active,
 .basket-link:active{
@@ -191,11 +202,13 @@ a {
   grid-template-columns: 400px 144px 619px;
   grid-template-rows: 189px 25px 40px 10px 158px;
   margin: 0 auto;
-  padding: 0 10px;}
+  padding: 0 10px;
+}
 
 .beginning{
   background-color: var(--basic-beige);
-  background-size: 100%;}
+  background-size: 100%;
+}
 
 .slogan {
   font-size: 55px;
@@ -211,13 +224,15 @@ a {
 .slogan-mini {
   display: block;
   grid-column: 1/2;
-  grid-row: 2/3;}
+  grid-row: 2/3;
+}
 
 .advantages a {
   background-color: var(--basic-button);
   margin-top: 38px;
   grid-column: 1/2;
-  grid-row: 4/-1;}
+  grid-row: 4/-1;
+}
 
 .advantages .button{
   display: block;
@@ -227,7 +242,8 @@ a {
   line-height: 18px;
   padding-top: 17px;
   padding-bottom: 0;
-  margin-bottom: 0px;}
+  margin-bottom: 0px;
+}
 
 .advantages .button:hover{
   background-color: #E74246;}
