@@ -263,13 +263,15 @@ a {
   padding: 0;
   list-style: none;
 }
+
 .slide {
   display: none;
 }
+
 .slider-controls {
-  position: absolute;
-  bottom: 290px;
-  left: 675px;
+  position: relative;
+  top: 93px;
+  left: 535px;
   z-index: 20;
   display: flex;
   width: 67px;
@@ -298,8 +300,8 @@ a {
   width: 3px;
   height: 3px;
   border-radius: 50%;
-  bottom: 3.5px;
-  left: 3.6px;
+  bottom: 26px;
+  left: 4px;
 }
 
 .advantages img{
@@ -878,34 +880,38 @@ a {
 .filters {
   width: 260px;
   height: 750px;
-  margin-top: 55px;}
+  margin-top: 55px;
+}
 
 .page-title {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: left;}
+  text-align: left;
+}
 
 .page-title ul {
   padding: 0;
   margin: 0;
   list-style: none;
-  position: relative;}
+  position: relative;
+}
 
-.grid-filter legend{
+.grid-filter legend {
   margin-top: 50px;
 }
 
-.grid-title{
-display: block;
-margin-left: 15px;
+.grid-title {
+  display: block;
+  margin-left: 15px;
 }
 
 .grid-list{
   margin-top: 15px;
   margin-left: 12px;
   padding-top: 0;
+  opacity: 0.4;
 }
 
 .filter-input-radio + label::before {
@@ -934,7 +940,9 @@ margin-left: 15px;
 
 .filter-option{
   margin-bottom: 19px;
+  display: block;
 }
+
 .feature-container{
   margin-top: 3px;
   margin-left: 13px;
@@ -943,6 +951,7 @@ margin-left: 15px;
   color: var(--basic-extra-dark);
   margin-bottom: 19px;
   padding: 0;
+  opacity: 0.4;
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -980,14 +989,24 @@ margin-left: 15px;
   cursor: pointer;
   user-select: none;
 }
-/* Наведение на псевдоэлементы*/
-.filter-input-checkbox:checked + label::before:focus,
-.filter-input-checkbox + label::before:focus,
-.filter-input-radio:checked + label::after:focus,
-.filter-input-radio + label::before:focus{
+
+/* Не работает наведение*/
+.features-list label:hover,
+.filter-option label:hover,
+.filter-input-checkbox:hover,
+.filter-input-radio:hover,
+.filter-input-checkbox:checked,
+.filter-input-radio:checked{
   opacity: 1;
 }
-
+.features-list label:invalid,
+.filter-option label:invalid {
+  opacity: 0.3
+}
+.filter-input-checkbox:invalid,
+.filter-input-radio:invalid{
+  opacity: 0.1
+}
 
 .button-show {
   line-height: 18px;
