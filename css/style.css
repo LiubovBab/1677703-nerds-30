@@ -790,6 +790,7 @@ a {
   padding-left: 16px;
   margin-top: 12px;
   margin-right: 20px;
+  line-height: 18px;
 }
 
 .login-form .button{
@@ -799,6 +800,8 @@ a {
   margin-bottom: 83px;
   padding: 13px 84px;
   text-transform: uppercase;
+  weight: 700;
+  line-height: 18px;
 }
 
 .modal-close {
