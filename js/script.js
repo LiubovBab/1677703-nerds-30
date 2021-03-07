@@ -57,3 +57,41 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+const advOne = document.querySelector(".advantages");
+const advTwo = document.querySelector(".advantages-two");
+const advThree = document.querySelector(".advantages-three");
+const slidecontrOne = document.querySelector(".slider-controls-one-be");
+const slidecontrTwo = document.querySelector(".slider-controls-two");
+const slidecontrThree = document.querySelector(".slider-controls-three");
+const sliderDelete = document.querySelector(".slider-delete");
+
+slidecontrTwo.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  advOne.classList.remove("advantages");
+  advOne.classList.add("slider-delete");
+  advTwo.classList.remove("slider-delete");
+  advTwo.classList.add("advantages");
+  slidecontrOne.classList.remove(".slider-controls-one-be");
+  slidecontrTwo.classList.add(".slider-controls-two-be");
+});
+
+slidecontrThree.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  advTwo.classList.remove("advantages");
+  advTwo.classList.add("slider-delete");
+  advTree.classList.remove("slider-delete");
+  advTree.classList.add("advantages");
+  slidecontrTwo.classList.remove(".slider-controls-two-be");
+  slidecontrTree.classList.add(".slider-controls-tree-be");
+});
+
+slidecontrOne.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  advTree.classList.remove("advantages");
+  advTree.classList.add("slider-delete");
+  advOne.classList.remove("slider-delete");
+  advOne.classList.add("advantages");
+  slidecontrThree.classList.remove(".slider-controls-tree-be");
+  slidecontrOne.classList.add(".slider-controls-one-be");
+});
