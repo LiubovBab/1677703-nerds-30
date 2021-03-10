@@ -58,6 +58,8 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
+//slider
+
 const advOne = document.querySelector(".advantages");
 const advTwo = document.querySelector(".advantages-two");
 const advThree = document.querySelector(".advantages-three");
@@ -72,26 +74,32 @@ slidecontrTwo.addEventListener("click", function (evt) {
   advOne.classList.add("slider-delete");
   advTwo.classList.remove("slider-delete");
   advTwo.classList.add("advantages");
-  slidecontrOne.classList.remove(".slider-controls-one-be");
-  slidecontrTwo.classList.add(".slider-controls-two-be");
+  advThree.classList.add("slider-delete");
+  slidecontrOne.classList.remove("slider-controls-one-be");
+  slidecontrTwo.classList.add("slider-controls-two-be");
+  slidecontrThree.classList.remove("slider-controls-three-be");
 });
 
 slidecontrThree.addEventListener("click", function (evt) {
   evt.preventDefault();
   advTwo.classList.remove("advantages");
   advTwo.classList.add("slider-delete");
-  advTree.classList.remove("slider-delete");
-  advTree.classList.add("advantages");
-  slidecontrTwo.classList.remove(".slider-controls-two-be");
-  slidecontrTree.classList.add(".slider-controls-tree-be");
+  advThree.classList.remove("slider-delete");
+  advThree.classList.add("advantages");
+  advOne.classList.add("slider-delete");
+  slidecontrTwo.classList.remove("slider-controls-two-be");
+  slidecontrThree.classList.add("slider-controls-three-be");
+  slidecontrOne.classList.remove("slider-controls-one-be");
 });
 
 slidecontrOne.addEventListener("click", function (evt) {
   evt.preventDefault();
-  advTree.classList.remove("advantages");
-  advTree.classList.add("slider-delete");
+  advThree.classList.remove("advantages");
+  advThree.classList.add("slider-delete");
   advOne.classList.remove("slider-delete");
   advOne.classList.add("advantages");
-  slidecontrThree.classList.remove(".slider-controls-tree-be");
-  slidecontrOne.classList.add(".slider-controls-one-be");
+  advTwo.classList.add("slider-delete");
+  slidecontrThree.classList.remove("slider-controls-three-be");
+  slidecontrOne.classList.add("slider-controls-one-be");
+    slidecontrTwo.classList.remove("slider-controls-two-be");
 });
