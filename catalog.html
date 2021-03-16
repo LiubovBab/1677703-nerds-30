@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
 
@@ -45,7 +45,7 @@
     <main class="page-catalog container">
       <section class="filters">
         <div class="price">
-          <form method="get" target="_blank" action="https://echo.htmlacademy.ru">
+          <form method="get" target="_blank" action="https://echo.htmlacademy.ru" >
             <fieldset class="filter-item">
               <legend>Стоимость:</legend>
               <div class="range-filter">
@@ -66,9 +66,7 @@
                 </div>
               </div>
             </fieldset>
-          </form>
         </div>
-        <form method="get" action="https://echo.htmlacademy.ru" target="_blank">
       <fieldset>
         <legend class="page-title grid-title">Сетка:</legend>
         <ul class="grid-list">
@@ -86,8 +84,7 @@
           </li>
         </ul>
       </fieldset>
-        <fieldset>
-          <div class="feature-container">
+        <fieldset class="feature-container">
             <legend class="page-title">Особенности:</legend>
             <ul class="features-list">
               <li class="features-item">
@@ -111,9 +108,10 @@
                 <label for="filter-basked">Корзина</label>
               </li>
             </ul>
-        </div>
         </fieldset>
-        <button class="button-show" type="submit" href="https://echo.htmlacademy.ru/">Показать</button>
+        <button class="button-show" type="submit">
+          <span>Показать</span>
+          </button>
       </form>
     </section>
     <section>
@@ -136,7 +134,7 @@
             <div class="card-template">
               <a href="#modal-show-template" class="page-title">Sedona</a>
               <p class="template-info">Информационный сайт для туристов</p>
-              <p class="template-price">9 900 ₽</p>
+              <button class="template-price">9 900 ₽</button>
             </div>
           </li>
           <li class="template-item">
@@ -144,7 +142,7 @@
             <div class="card-template">
               <a href="#modal-show-template" class="page-title">Pink</a>
               <p class="template-info">Cайт приложения на телефон</p>
-              <p class="template-price">8 900 ₽</p>
+              <button class="template-price">8 900 ₽</button>
             </div>
           </li>
           <li class="template-item">
@@ -152,7 +150,7 @@
             <div class="card-template">
               <a href="#modal-show-template" class="page-title">Borodinski</a>
               <p class="template-info">Сайт барбершопа</p>
-              <p class="template-price">9 900 ₽</p>
+              <button class="template-price">9 900 ₽</button>
             </div>
           </li>
           <li class="template-item">
@@ -160,7 +158,7 @@
             <div class="card-template">
               <a href="#modal-show-template" class="page-title">Mishka</a>
               <p class="template-info">Сайт для заказа вязанных изделий</p>
-              <p class="template-price">8 900 ₽</p>
+              <button class="template-price">8 900 ₽</button>
             </div>
           </li>
           <li class="template-item">
@@ -168,7 +166,7 @@
             <div class="card-template">
               <a href="#modal-show-template" class="page-title">Aplus</a>
               <p class="template-info">Информационный сайт для обучения</p>
-              <p class="template-price">9 900 ₽</p>
+              <button class="template-price">9 900 ₽</button>
             </div>
           </li>
           <li class="template-item">
@@ -176,22 +174,23 @@
             <div class="card-template">
               <a href="#modal-show-template" class="page-title">Kvast</a>
               <p class="template-info">Сайт магазина пива</p>
-              <p class="template-price">8 900 ₽</p>
+              <button class="template-price">8 900 ₽</button>
             </div>
           </li>
         </ul>
       <div class="pagination">
         <ul class="pagination-list">
           <li  class="pagination-item pagination-item-current">
-            <a>1</a>
+            <a><span>1</span></a>
           </li>
           <li class="pagination-item">
-            <a href="#">2</a>
+            <a href="#"><span>2</span></a>
           </li>
           <li class="pagination-item">
-            <a href="#">3</a></li>
+            <a href="#"><span>3</span></a>
+          </li>
           <li class="pagination-item item-next">
-              <a href="#">Следующая</a>
+              <a href="#"><span>Следующая</span></a>
           </li>
         </ul>
       </div>
@@ -255,7 +254,7 @@
               </p>
               <p class="appointment-item login-text">
                 <label for="text-fields">Текст письма:</label>
-                <input class="login-icon-text" type="text" id="text-fields" placeholder="В свободной форме">
+                <textarea class="login-icon-text" type="text" id="text-fields" placeholder="В свободной форме"></textarea>
               </p>
               <input class="button" type="submit" value="Отправить">
             </form>
