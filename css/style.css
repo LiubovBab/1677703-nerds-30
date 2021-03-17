@@ -225,7 +225,7 @@ a {
 
 .advantages {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto 760;
   margin: 0 auto;
 }
 
@@ -261,6 +261,7 @@ a {
   font-weight: 500;
   padding-top: 19px;
   margin-top: 41px;
+  background-color: var(--basic-button);
 }
 
 .advantages .button:hover{
@@ -770,6 +771,7 @@ a {
   height: 115px;
   margin: 12px 20px 0 0;
   padding: 10px 0 0 10px;
+  resize: none;
 }
 
 .login-icon-name:hover,
@@ -1334,7 +1336,7 @@ a {
 
   @keyframes bounce {
 0% {
-  transform: translateY(-2000px);
+  transform: translateY(-1500px);
 }
 70% {
   transform: translateY(30px);

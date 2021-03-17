@@ -2,7 +2,7 @@ const writeBotton = document.querySelector(".write-button");
 const writePopup = document.querySelector(".modal");
 const writeClose = writePopup.querySelector(".modal-close");
 const writeForm = writePopup.querySelector(".login-form");
-const writeName = writePopup.querySelector(".login-icon-user");
+const writeName = writePopup.querySelector(".login-icon-name");
 const writelogin = writePopup.querySelector(".login-icon-login");
 const writeText = writePopup.querySelector(".login-icon-text");
 
