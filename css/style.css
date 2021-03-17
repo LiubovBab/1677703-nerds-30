@@ -235,7 +235,7 @@ a {
 }
 
 .slogan {
-  max-width: 660px;
+  max-width: 600px;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
@@ -252,7 +252,7 @@ a {
   margin-top: 28px;
 }
 
-.advantages .button{
+.button-learn-more{
   display: block;
   width: 240px;
   height: 30px;
@@ -282,6 +282,7 @@ a {
 .advantages img{
   background-color: var(--basic-beige);
   margin: -10px 0 -37px 15px;
+  object-fit: contain;
 }
 
 .advantages img,
@@ -289,10 +290,12 @@ a {
 .advantages-tree img{
   width: 760px;
   height: 431px;
+  object-fit: contain;
 }
 
 .slider-controls {
   position: relative;
+  width: 600px;
   bottom: 98px;
   left: 535px;
   z-index: 2;
