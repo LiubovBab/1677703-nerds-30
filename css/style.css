@@ -225,7 +225,7 @@ a {
 
 .advantages {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 400px auto;
   margin: 0 auto;
 }
 
@@ -235,13 +235,18 @@ a {
 }
 
 .slogan {
-  max-width: 600px;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
   margin: 66px 0 0 0;
+  z-index: 2
 }
-
+.slogan-two{
+  width: 515px;
+}
+.slogan-three {
+  width: 425px;
+}
 .slogan-mini {
   display: block;
   margin-top: 27px;
@@ -276,8 +281,8 @@ a {
 }
 
 .advantages img{
-  background-color: var(--basic-beige);
-  margin: -10px 0 -37px 15px;
+  margin: -10px 0 -37px 0px;
+  z-index: 1;
 }
 
 .advantages img,
@@ -719,8 +724,13 @@ a {
 }
 
 .modal-error {
+  display: block;
+  transform: translate(0px, 0px);
+  left: 17%;
+  top: 10%;
   animation: shake 0.6s;
 }
+
 .modal span {
   display: block;
   font-size: 45px;
@@ -1330,36 +1340,29 @@ a {
 
   /* Animations */
 
-  @keyframes bounce {
-0% {
-  transform: translateY(-1500px);
+@keyframes bounce {
+0% {transform: translate(-500px 300px);
 }
-70% {
-  transform: translateY(30px);
+50% {transform: translateX(-300px);
 }
-90% {
-  transform: translateY(-10px);  }
-100% {
-  transform: translateY(0);
+70% {transform: translate(-1000px 300px);
 }
+100%{transform: translate(100px 500px);}
   }
 
 @keyframes shake {
 0%,
-100% {
-  transform: translateX(0);
+100% {transform: translateX(0);
 }
 10%,
 30%,
 50%,
 70%,
-90% {
-  transform: translateX(-10px);
+90% {transform: translateX(-10px);
 }
+
 20%,
 40%,
 60%,
-80% {
-  transform: translateX(10px);
-}
-}
+80% {transform: translateX(10px);
+  }
